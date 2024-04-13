@@ -4,8 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { cache } from "react";
-import AddToCartButton from "./AddToCartButton";
-import { incrementProductQuantity } from "./actions";
+
 
 interface ProductPageProps {
   params: {
@@ -25,7 +24,7 @@ export async function generateMetadata({
   const product = await getProduct(id);
 
   return {
-    title: product.name + " - Flowmazon",
+    title: product.name + " Arrovain Coffee",
     description: product.description,
     openGraph: {
       images: [{ url: product.imageUrl }],

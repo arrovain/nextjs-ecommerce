@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 
 
 export const metadata = {
-  title: "Add Product - Flowmazon",
+  title: "Add Product - Arrovain Coffee",
 };
 
 async function addProduct(formData: FormData) {
@@ -61,7 +61,7 @@ export default async function AddProductPage() {
           type="number"
           className="input-bordered input mb-3 w-full"
         />
-        <FormSubmitButton> add product</FormSubmitButton>
+        <FormSubmitButton className="btn-block"> add product</FormSubmitButton>
       </form>
     </div>
   );
